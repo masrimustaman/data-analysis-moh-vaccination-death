@@ -228,7 +228,7 @@ fig_statex.add_trace(go.Scatter(
 
 # Add death stateX trace at another y axis, by default is hidden
 fig_statex.add_trace(
-    go.Scatter(x=df_deathmalaysia["date"], y=df_deathmalaysia["deaths_new"], name="Death", line_color="grey", visible = "legendonly"), #mode='markers', marker_color="grey", visible = "legendonly"), #, line_color="grey"), 
+    go.Scatter(x=df_deathstatex["date"], y=df_deathstatex["deaths_new"], name="Death", line_color="grey", visible = "legendonly"), #mode='markers', marker_color="grey", visible = "legendonly"), #, line_color="grey"), 
     secondary_y=True,
 )
 
