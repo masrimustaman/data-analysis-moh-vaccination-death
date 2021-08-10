@@ -43,17 +43,14 @@ def load_data4(DATA_URL):
 def load_data5(DATA_URL):
     data = pd.read_csv(DATA_URL)
     return data
+
+
 df_vaccmalaysia = load_data1("https://raw.githubusercontent.com/CITF-Malaysia/citf-public/main/vaccination/vax_malaysia.csv")
 df_deathmalaysia = load_data2("https://raw.githubusercontent.com/MoH-Malaysia/covid19-public/main/epidemic/deaths_malaysia.csv")
 df_deathstate = load_data3("https://raw.githubusercontent.com/MoH-Malaysia/covid19-public/main/epidemic/deaths_state.csv")
 df_vaccstate = load_data4("https://raw.githubusercontent.com/CITF-Malaysia/citf-public/main/vaccination/vax_state.csv")
 
 df_population = load_data5("https://raw.githubusercontent.com/MoH-Malaysia/covid19-public/main/static/population.csv")
-
-
-
-# %%
-df_deathmalaysia['deaths_cumul'] = df_deathmalaysia['deaths_new'].cumsum()
 
 
 # %%
