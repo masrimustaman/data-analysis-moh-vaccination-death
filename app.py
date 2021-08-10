@@ -127,7 +127,7 @@ fig_mas.add_trace(go.Scatter(
 
 # Add death Malaysia trace at another y axis, by default is hidden
 fig_mas.add_trace(
-    go.Scatter(x=df_deathmalaysia["date"], y=df_deathmalaysia["deaths_new"], name="Death", line_color="grey", visible = "legendonly"), #mode='markers', marker_color="grey", visible = "legendonly"), #, line_color="grey"), 
+    go.Scatter(x=df_deathmalaysia["date"], y=df_deathmalaysia["deaths_new"], name="Death (Click to hide/unhide)", line_color="grey", visible = "legendonly"), #mode='markers', marker_color="grey", visible = "legendonly"), #, line_color="grey"), 
     secondary_y=True,
 )
 
@@ -143,7 +143,7 @@ fig_mas.update_xaxes(title_text="Date",
 
 # Set y-axes titles
 fig_mas.update_yaxes(title_text="<b>Vaccination</b> 1 & 2", secondary_y=False)
-fig_mas.update_yaxes(title_text="<b>Death</b> click legend to unhide", secondary_y=True)
+fig_mas.update_yaxes(title_text="<b>Death</b>", secondary_y=True)
 
 # Visualize and export to HTML (if required)
 # fig_mas.show()
@@ -228,7 +228,7 @@ fig_statex.add_trace(go.Scatter(
 
 # Add death stateX trace at another y axis, by default is hidden
 fig_statex.add_trace(
-    go.Scatter(x=df_deathstatex["date"], y=df_deathstatex["deaths_new"], name="Death", line_color="grey", visible = "legendonly"), #mode='markers', marker_color="grey", visible = "legendonly"), #, line_color="grey"), 
+    go.Scatter(x=df_deathstatex["date"], y=df_deathstatex["deaths_new"], name="Death (Click to hide/unhide)", line_color="grey", visible = "legendonly"), #mode='markers', marker_color="grey", visible = "legendonly"), #, line_color="grey"), 
     secondary_y=True,
 )
 
@@ -244,7 +244,7 @@ fig_statex.update_xaxes(title_text="Date",
 
 # Set y-axes titles
 fig_statex.update_yaxes(title_text="<b>Vaccination</b> 1 & 2", secondary_y=False)
-fig_statex.update_yaxes(title_text="<b>Death</b> click legend to unhide", secondary_y=True)
+fig_statex.update_yaxes(title_text="<b>Death</b>", secondary_y=True)
 
 # Visualize and export to HTML (if required)
 # fig_statex.show()
