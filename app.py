@@ -253,6 +253,5 @@ st.plotly_chart(fig_statex)
 
 # %%
 st.markdown('<small>© Copyright 2021, Masri Mustaman</small>', unsafe_allow_html=True)
-st.markdown('<small>https://github.com/masrimustaman</small>', unsafe_allow_html=True)
-
-
+st.markdown('<small>https://github.com/masrimustaman/data-analysis-moh-vaccination-death</small>', unsafe_allow_html=True)
+st.markdown('<small>https://www.linkedin.com/in/md-masri-md-mustaman</small>', unsafe_allow_html=True)
