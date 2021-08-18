@@ -67,13 +67,13 @@ fig_mas = make_subplots(specs=[[{"secondary_y": True}]])
 
 # Add Dose 1 Vaccice traces
 fig_mas.add_trace(
-    go.Scatter(x=df_vaccmalaysia["date"], y=df_vaccmalaysia["dose1_cumul"], name="Dose1 Vaccince"),
+    go.Scatter(x=df_vaccmalaysia["date"], y=df_vaccmalaysia["cumul_partial"], name="Dose1 Vaccince"),
     secondary_y=False,
 )
 
 # Add Dose 2 Vaccice traces
 fig_mas.add_trace(
-    go.Scatter(x=df_vaccmalaysia["date"], y=df_vaccmalaysia["dose2_cumul"], name="Dose2 Vaccince"),
+    go.Scatter(x=df_vaccmalaysia["date"], y=df_vaccmalaysia["cumul_full"], name="Dose2 Vaccince"),
     secondary_y=False,
 )
 
@@ -167,14 +167,14 @@ fig_statex = make_subplots(specs=[[{"secondary_y": True}]])
 
 # Add Dose 1 Vaccice traces for stateX
 fig_statex.add_trace(
-    go.Scatter(x=df_vaccstatex["date"], y=df_vaccstatex["dose1_cumul"], name="Dose1 Vaccince"),
+    go.Scatter(x=df_vaccstatex["date"], y=df_vaccstatex["cumul_partial"], name="Dose1 Vaccince"),
     secondary_y=False,
 )
 
 
 # Add Dose 2 Vaccice traces for stateX
 fig_statex.add_trace(
-    go.Scatter(x=df_vaccstatex["date"], y=df_vaccstatex["dose2_cumul"], name="Dose2 Vaccince"),
+    go.Scatter(x=df_vaccstatex["date"], y=df_vaccstatex["cumul_full"], name="Dose2 Vaccince"),
     secondary_y=False,
 )
 
